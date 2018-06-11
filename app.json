@@ -1,0 +1,11 @@
+{
+  "pages":[
+    "pages/welcome/welcome",
+    "pages/posts/posts"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#333",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "幄帷"
+  }
+}
