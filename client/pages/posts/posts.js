@@ -1,4 +1,6 @@
 // pages/posts/posts.js
+var dataObj = require("../../data/data.js")
+
 Page({
 
   /**
@@ -13,44 +15,8 @@ Page({
    */
   onLoad: function (options) {
     console.log("onLoad:页面被加载")
-    var postList = [{
-      object: {
-        mydate: new Date().toLocaleDateString()
-      },
-      title: "Sony PS4",
-      postImg: "/images/posts/ps4_01.jpg",
-      avatar: "/images/1157623.jpg",
-      content: "PS4 is the best console in the World!Just Look and See!!!",
-      readNum: 92,
-      iineNum: { array: [108] },
-      commtNum: 7,
-    },
-    {
-      object: {
-        mydate: new Date().toLocaleDateString()
-      },
-      title: "Nintendo Switch",
-      postImg: "/images/posts/ns_01.jpg",
-      avatar: "/images/1157623.jpg",
-      content: "PS4 is the second best console in the World!",
-      readNum: 999,
-      iineNum: { array: [999] },
-      commtNum: 999,
-    },
-    {
-      object: {
-        mydate: new Date().toLocaleDateString()
-      },
-      title: "Microsoft Xbox",
-      postImg: "/images/posts/Xbox_01.jpg",
-      avatar: "/images/1157623.jpg",
-      content: "Xbox is the third best console in the World!",
-      readNum: 7,
-      iineNum: { array: [9] },
-      commtNum: 0,
-    }]
     this.setData({
-      postList:postList
+      postList: dataObj.postList
     })
   },
 

@@ -1,0 +1,19 @@
+<template name="postItemTpl">
+  <view class='post-container'>
+    <view class='post-author-date'>
+      <image src='{{avatar}}'></image>
+      <text >{{mydate}}</text>
+    </view>
+    <text class='post-title'>{{title}}</text>
+    <image class='post-image' src='{{postImg}}' mode='aspectFill'></image>
+    <text class='post-content'>{{postData.content}}</text>
+    <view class='post-like'>
+      <image src='/images/icon/iine.png'/>
+      <text>{{iineNum}}</text>
+      <image src='/images/icon/read.png'/>
+      <text>{{readNum}}</text>
+      <image src='/images/icon/comment.png'/>
+      <text>{{commtNum}}</text>
+    </view>
+  </view>
+</template>
